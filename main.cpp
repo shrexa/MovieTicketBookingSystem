@@ -82,6 +82,34 @@ void booking ::typeofmv()
     }
 }
 
+void booking ::inputSeats()
+{
+    string arr2[] = {"PRIME PLUS (Front) Seats", "PRIME Seats", "CLASSIC PLUS Seats", "CLASSIC (Last) seats"};
+    for (int i = 0; i < 4; i++)
+    {
+        cout << i + 1 << "." << arr2[i] << endl;
+    }
+    cout << "\nEnter Choice number : ";
+    int m;
+    cin >> m;
+    cout << "\n\n";
+    cout << "What are the required no. of seats? : ";
+    int s;
+    cin >> s;
+
+    string arrS[13] = {"A3", "A4", "A5", "D9", "D10", "D11", "D12", "G5", "G6", "H4", "K1", "K2", "L9"};
+    for (int i = 0; i < 12; i++)
+    {
+        cout << i + 1 << "." << arrS[i] << endl;
+    }
+
+    cout << "Type the Seat names you want to Book : ";
+    // string arrSeat[s];
+    for (int i = 0; i < s; i++)
+    {
+        cin >> arrSeat[i];
+    }
+}
 
 
 int main()
