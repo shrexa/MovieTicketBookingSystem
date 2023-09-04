@@ -38,7 +38,7 @@ void booking::checkAvailableMovies()
 }
 void booking ::typeofmv()
 {
-    cout << "What type of movie you prefer?\n1.Action Movie\n2.Romantic Movie \n3.Inspirational movie\n4.Comedy movie\n5.Horror movie\n6.Animation movie\n7.War movie\n8.Mystery movie\n\n\nPlease Enter the Choice Number : ";
+    cout << "What type of movie you prefer?\n1.Action Movie\n2.Romantic Movie \n3.Inspirational movie\n4.Comedy movie\n5.Horror movie\n6.Animation movie\n7.War movie\n8.Mystery movie\n\nPlease Enter the Choice Number : ";
     int a;
     cin >> a;
     cout << "\n\n";
@@ -65,7 +65,7 @@ void booking ::typeofmv()
         cout << "\nEnter Choice number : ";
         int d;
         cin >> d;
-        cout << "\nMovie selected : Golmaal\n\n";
+        cout << "\nMovie selected : Golmaal 5 \n\n\n";
         break;
     case 5:
         cout << "The Most Trendy Movies nowdays in your chosed type are : " << endl;
@@ -123,7 +123,7 @@ void booking ::inputSeats()
     {
         cin >> arrSeat[i];
     }
-    cout << "\n\n";
+    cout << "\n";
 }
 void booking ::location()
 {
@@ -144,21 +144,23 @@ void booking ::location()
 void booking ::showticket()
 {
 
-    cout << "Please Enter your Name : ";
+    cout << "Please Enter your Name  : ";
     string name;
     cin >> name;
-    cout << "\nCongratulations! " << name << ", Your Movie ticket has been booked for " << arrDay[day - 1] << endl;
+    cout << "\nCongratulations! " << name << ", Your Movie ticket has been booked for " << arrDay[day - 1] << endl<<endl;
+    cout<<"Movie Ticket Information - \n\n";
     cout << "Location selected       : " << arrLoc[l - 1] << endl;
     cout << "Movie chosen            : "
          << "Comedy -Dream Girl 2\n";
-    cout << s << " - seats has been booked.\nThe seat numbers are : ";
+    cout <<  "No. of seats booked     : "<<s;
+    cout<< "\nSeat numbers are        : ";
     for (int i = 0; i < s; i++)
     {
         cout << arrSeat[i] << " ";
     }
-    cout << "\nPayment done through " << arrP[p - 1] << endl;
+    cout << "\nPayment done through    : " << arrP[p - 1] << endl;
     cout << "INR per ticket          : Rs 250" << endl;
-    cout << "Total Amount paid       : Rs " << s*250 << endl;
+    cout << "Total Amount paid       : Rs " << s * 250 << endl;
 
     cout << "\nTHANKYOU , See you soon!\n";
 }
@@ -188,6 +190,12 @@ int main()
         case 2:
             cout << "What seats do you prefer? : \n\n";
             obj1.inputSeats();
+            cout << "Seats selected : ";
+            for (int i = 0; i < s; i++)
+            {
+                cout << arrSeat[i] << " ";
+            }
+            cout << "\n\n\n";     
             // obj1.checkAvailableMovies();
             // seatinfo();
             break;
@@ -201,11 +209,11 @@ int main()
                 cout << i + 1 << "." << arrDay[i] << endl;
             }
             // int day;
-            cout << "\nEnter Choice number : ";
+            cout << "\n\nEnter Choice number : ";
             cin >> day;
             cout << "\n\n";
+            cout << "Day chosen for movie : " << arrDay[day - 1] << "\n\n\n";
             // cout << "\nOkay! Now go for other details.\n\n";
-            cout << "Day chosen for movie : " << arrDay[day - 1] << "\n\n";
             // obj1.checkAvailableMovies();
             break;
         }
@@ -225,7 +233,7 @@ int main()
             // int p;
             cout << "\nEnter Choice number : ";
             cin >> p;
-            cout << "\nPayment done through : " << arrP[p - 1] << "successfully, Thankyou !\n\n\n";
+            cout << "\nYour Payment has been done through " << arrP[p - 1] << " successfully!\n\n\n";
 
             // cout << "\nOkay! Now go for other details.\n\n";
             // obj1.checkAvailableMovies();
