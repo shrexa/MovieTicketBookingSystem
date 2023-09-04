@@ -21,7 +21,7 @@ string arrP[5] = {"Google pay", "Phonepe", "Paytm", "Card", "Cash"};
 string arr2[4] = {"PRIME PLUS (Front) Seats", "PRIME Seats", "CLASSIC PLUS Seats", "CLASSIC (Last) seats"};
 string arrDay[4] = {"Today", "Tommorow", "Day After Tommorow", "Later"};
 string arrLoc[8] = {"INOX: AIPL Joy Street, Gurgaon", "PVR: Anupam Saket", "Miraj Cinemas: M4U, Sahibabad", "MovieMax: Pacific Mall Ghaziabad", "PVR: Vegas Dwarka", "G3S Cinema: Rohini (Newly Renovated)", "Cinepolis: DLF Avenue, Saket", "PVR: Anupam Saket, Delhi"};
-string arrSeat[5];
+string arrSeat[5]; // declared by user
 
 void booking::welcome()
 {
