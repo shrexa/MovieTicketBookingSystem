@@ -86,7 +86,12 @@ void booking ::typeofmv()
 
 int main()
 {
-    // cout << "\n\n{ ~ ~ ~  WELCOME TO MOVIE TICKET BOOKING SYSTEM  ~ ~ ~ }\n\n\n";
+// welcome page
+    booking obj1;
+    obj1.welcome();
+
+    // ask for type of movie veiwer prefer
+    obj1.checkAvailableMovies();
 
     return 0;
 }
