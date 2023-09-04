@@ -14,10 +14,11 @@ public:
     void showticket();
 };
 
-int s, p, l, day;
+int s, p, l, m, day;
 int n;
 
 string arrP[5] = {"Google pay", "Phonepe", "Paytm", "Card", "Cash"};
+string arr2[4] = {"PRIME PLUS (Front) Seats", "PRIME Seats", "CLASSIC PLUS Seats", "CLASSIC (Last) seats"};
 string arrDay[4] = {"Today", "Tommorow", "Day After Tommorow", "Later"};
 string arrLoc[8] = {"INOX: AIPL Joy Street, Gurgaon", "PVR: Anupam Saket", "Miraj Cinemas: M4U, Sahibabad", "MovieMax: Pacific Mall Ghaziabad", "PVR: Vegas Dwarka", "G3S Cinema: Rohini (Newly Renovated)", "Cinepolis: DLF Avenue, Saket", "PVR: Anupam Saket, Delhi"};
 string arrSeat[5];
@@ -65,7 +66,7 @@ void booking ::typeofmv()
         cout << "\nEnter Choice number : ";
         int d;
         cin >> d;
-        cout << "\nMovie selected : Golmaal 5 \n\n\n";
+        cout << "\nMovie selected : Dream Girl 2 \n\n\n";
         break;
     case 5:
         cout << "The Most Trendy Movies nowdays in your chosed type are : " << endl;
@@ -98,13 +99,13 @@ void booking ::cost()
 }
 void booking ::inputSeats()
 {
-    string arr2[] = {"PRIME PLUS (Front) Seats", "PRIME Seats", "CLASSIC PLUS Seats", "CLASSIC (Last) seats"};
+    // string arr2[] = {"PRIME PLUS (Front) Seats", "PRIME Seats", "CLASSIC PLUS Seats", "CLASSIC (Last) seats"};
     for (int i = 0; i < 4; i++)
     {
         cout << i + 1 << "." << arr2[i] << endl;
     }
     cout << "\nEnter Choice number : ";
-    int m;
+    // int m;
     cin >> m;
     cout << "\n";
     cout << "What are the required no. of seats? : ";
@@ -147,13 +148,16 @@ void booking ::showticket()
     cout << "Please Enter your Name  : ";
     string name;
     cin >> name;
-    cout << "\nCongratulations! " << name << ", Your Movie ticket has been booked for " << arrDay[day - 1] << endl<<endl;
-    cout<<"Movie Ticket Information - \n\n";
-    cout << "Location selected       : " << arrLoc[l - 1] << endl;
+    cout << "\nCongratulations! " << name << ", Your Movie ticket has been booked for " << arrDay[day - 1] << endl
+         << endl;
+    cout << "Movie Ticket Information - \n\n";
+    cout << "Name                    :" << name;
+    cout << "\nLocation selected       : " << arrLoc[l - 1] << endl;
     cout << "Movie chosen            : "
-         << "Comedy -Dream Girl 2\n";
-    cout <<  "No. of seats booked     : "<<s;
-    cout<< "\nSeat numbers are        : ";
+         << "Comedy Movie - Dream Girl 2\n";
+    cout << "No. of seats booked     : " << s;
+    cout << "\nSeats preferred         : " << arr2[m - 1];
+    cout << "\nSeat numbers are        : ";
     for (int i = 0; i < s; i++)
     {
         cout << arrSeat[i] << " ";
@@ -162,7 +166,7 @@ void booking ::showticket()
     cout << "INR per ticket          : Rs 250" << endl;
     cout << "Total Amount paid       : Rs " << s * 250 << endl;
 
-    cout << "\nTHANKYOU , See you soon!\n";
+    cout << "\nTHANKYOU , See you soon!\n\n";
 }
 
 int main()
@@ -195,7 +199,7 @@ int main()
             {
                 cout << arrSeat[i] << " ";
             }
-            cout << "\n\n\n";     
+            cout << "\n\n\n";
             // obj1.checkAvailableMovies();
             // seatinfo();
             break;
