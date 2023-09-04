@@ -13,17 +13,21 @@ public:
     void showticket();
 };
 
-
+int s, p, l, day;
 int n;
+
+string arrP[5] = {"Google pay", "Phonepe", "Paytm", "Card", "Cash"};
+string arr3[4] = {"Today", "Tommorow", "Day After Tommorow", "Later"};
+string arrLoc[8] = {"INOX: AIPL Joy Street, Gurgaon", "PVR: Anupam Saket", "Miraj Cinemas: M4U, Sahibabad", "MovieMax: Pacific Mall Ghaziabad", "PVR: Vegas Dwarka", "G3S Cinema: Rohini (Newly Renovated)", "Cinepolis: DLF Avenue, Saket", "PVR: Anupam Saket, Delhi"};
+string arrSeat[5];
+
+
 
 void booking::welcome()
 {
     cout << "\n\n{ ~ ~ ~  WELCOME TO MOVIE TICKET BOOKING SYSTEM  ~ ~ ~ }\n\n\n";
 }
-void booking ::cost()
-{
-    cout << "The Cost of your choosen Movie Ticket per seat is Rs 350.\n\nThnaks! Hope to see you back soon :)\n\n";
-}
+
 void booking::checkAvailableMovies()
 {
     cout << "Steps for booking a Movie Ticket :- \n\n";
@@ -33,7 +37,6 @@ void booking::checkAvailableMovies()
     cin >> n;
     cout << "\n\n";
 }
-
 void booking ::typeofmv()
 {
     cout << "What type of movie you prefer?\n1.Action Movie\n2.Romantic Movie \n3.Inspirational movie\n4.Comedy movie\n5.Horror movie\n6.Animation movie\n7.War movie\n8.Mystery movie\n\n\nPlease Enter the Choice Number : ";
@@ -82,6 +85,10 @@ void booking ::typeofmv()
     }
 }
 
+void booking ::cost()
+{
+    cout << "The Cost of your choosen Movie Ticket per seat is Rs 350.\n\nThnaks! Hope to see you back soon :)\n\n";
+}
 void booking ::inputSeats()
 {
     string arr2[] = {"PRIME PLUS (Front) Seats", "PRIME Seats", "CLASSIC PLUS Seats", "CLASSIC (Last) seats"};
@@ -110,11 +117,24 @@ void booking ::inputSeats()
         cin >> arrSeat[i];
     }
 }
+void booking ::location()
+{
+    cout << "Which location do you prefer? : \n\n";
 
+    for (int i = 0; i < 8; i++)
+    {
+        cout << i + 1 << "." << arrLoc[i] << endl;
+    }
+    cout << "\n\nEnter Choice number : ";
+    // int l;
+    cin >> l;
+    cout << "\nOkay! Now go for other details.\n\n";
+    cout << "Your ticket has been booked for " << arrLoc[l - 1] << ",THANKYOU\n";
+}
 
 int main()
 {
-// welcome page
+    // welcome page
     booking obj1;
     obj1.welcome();
 
@@ -123,4 +143,3 @@ int main()
 
     return 0;
 }
-
