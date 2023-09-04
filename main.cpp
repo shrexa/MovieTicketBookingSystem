@@ -134,6 +134,7 @@ void booking ::location()
 
 int main()
 {
+
     // welcome page
     booking obj1;
     obj1.welcome();
@@ -141,5 +142,61 @@ int main()
     // ask for type of movie veiwer prefer
     obj1.checkAvailableMovies();
 
+    // ques1
+    int n;
+    switch (n)
+    {
+
+    case 1:
+        obj1.typeofmv();
+        obj1.checkAvailableMovies();
+        break;
+
+    case 2:
+        cout << "What seats do you prefer? : \n\n";
+        obj1.inputSeats();
+        obj1.checkAvailableMovies();
+        // seatinfo();
+        break;
+
+    case 3:
+    {
+        cout << "Booking required for which day? : \n\n";
+        // string arr3[4] = {"Today", "Tommorow", "Day After Tommorow", "Later"};
+        for (int i = 0; i < 4; i++)
+        {
+            cout << i + 1 << "." << arr3[i] << endl;
+        }
+        int day;
+        cout << "\nEnter Choice number : ";
+        cin >> day;
+        cout << "\nOkay! Now go for other details.\n\n";
+        cout << "Your ticket has been booked for " << arr3[day - 1] << ",THANKYOU\n";
+        obj1.checkAvailableMovies();
+        break;
+    }
+    case 4:
+        obj1.location();
+        obj1.checkAvailableMovies();
+        break;
+
+    case 5:
+        cout << "How would you like to pay?? : \n\n";
+
+        for (int i = 0; i < 5; i++)
+        {
+            cout << i + 1 << "." << arrP[i] << endl;
+        }
+        int p;
+        cout << "\nEnter Choice number : ";
+        cin >> p;
+        cout << "Your ticket has been booked for " << arrP[p - 1] << ",THANKYOU\n";
+        cout << "\nOkay! Now go for other details.\n\n";
+        obj1.checkAvailableMovies();
+        break;
+    default:
+        cout << "Please enter valid number.";
+        break;
+    }
     return 0;
 }
