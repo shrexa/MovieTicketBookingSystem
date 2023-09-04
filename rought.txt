@@ -1,0 +1,96 @@
+
+
+
+    void printSeats()
+    {
+      cout << arrS[s - 1] << ", " << arrS[s] << ", " << arrS[s + 1] << "\n";
+      if (s == 1)
+      {
+
+        cout << "";
+      }
+      else if (s == 2)
+      {
+        /* code */
+      }
+      else
+      {
+        /* code */
+      }
+    }
+
+    cout << "\n\nThe available seats for "<<arr2[m-1]<<" are "<<  << "\n\nTHANKYOU\n\n";
+    void seatinfo();
+    if (m == 1)
+    {
+      if (s == 1)
+      {
+       seatinfo()
+        {
+          cout << "\n\nThe available seats for " << arr2[0] << " are " << arrS[0] << ", "<< "\n\nTHANKYOU\n\n";
+        }
+      }
+      else if (s == 2)
+      {
+        seatinfo()
+        {
+          cout << "\n\nThe available seats for " << arr2[0] << " are " << arrS[0] << ", " << arrS[1] << ", " << "\n\nTHANKYOU\n\n";
+        }
+      }
+      else
+      {
+        /* code */
+      }
+    }
+    else if (m == 2)
+    {
+      /* code */
+    }
+    else if (m == 2)
+    {
+      /* code */
+    }
+    else if (m == 2)
+    {
+      /* code */
+    }
+    else
+    {
+      cout << "Please enter valid number.";
+    }
+
+    // switch (s)
+    {
+    case 1:
+      cout << "\n\nThe available seats for " << arr2[m - 1] << " are " << "\n\nTHANKYOU\n\n";
+      break;
+    case 2:
+      cout << "The required no. of seats are : ";
+      int k2;
+      cin >> k2;
+      cout << "\n\nThe available seats are SA2,SA3.  \n\nTHANKYOU\n\n";
+      break;
+    case 3:
+      cout << "The required no. of seats are : ";
+      int k3;
+      cin >> k3;
+      cout << "\n\nThe available seats are L14,L15,L16.  \n\nTHANKYOU\n\n";
+      break;
+    case 4:
+      cout << "The required no. of seats are : ";
+      int k4;
+      cin >> k4;
+      cout << "\n\nThe available seats are SA2,SA3.  \n\nTHANKYOU\n\n";
+      break;
+
+    default:
+      cout << "Please enter valid number.";
+      break;
+    }
+    break;
+
+    cout<<"\n1.Today \n2.Tommorow \n3.Day After Tommorow\n4.Later\n";
+    cout<<"\nEnter Choice number : ";
+    int d;
+    cin>>d;
+    cout<<"\nOkay! Now go for other details.\n\n";
