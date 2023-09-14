@@ -47,13 +47,13 @@ void booking ::typeofmv()
     switch (a)
     {
     case 1:
-        cout << "The Most Trendy Movies nowdays in your chosed type are : " << endl;
+        cout << "The Most Trendy Movies nowadays in your chosed type are : " << endl;
         cout << "\n1.KGF \n2.Bang Bang \n3.Ra-One\n4.Blood Money\n";
         cout << "\nEnter Choice number : ";
         break;
     case 2:
         cout << "The Most Trendy Movies nowdays in your chosed type are : " << endl;
-        cout << "\n1.Luca \n2.Dora The explorer\n3.Returns of Hanuman\n";
+        cout << "\n1.Luca \n2.Dora The explorer\n3.Mr.Bean's Holiday\n";
         cout << "\nEnter Choice number : ";
         break;
     case 3:
@@ -69,8 +69,8 @@ void booking ::typeofmv()
         cout << "\nMovie selected : Dream Girl 2 \n\n\n";
         break;
     case 5:
-        cout << "The Most Trendy Movies nowdays in your chosed type are : " << endl;
-        cout << "\n1. \n2.\n3.\n";
+        cout << "The Most Trendy Movies nowadays in your chosed type are : " << endl;
+        cout << "\n1.The Nun 2 \n2.Bhoot\n3.\n";
         break;
     case 6:
         cout << "The Most Trendy Movies nowdays in your chosed type are : " << endl;
