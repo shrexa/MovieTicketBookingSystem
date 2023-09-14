@@ -14,12 +14,14 @@ public:
     void showticket();
 };
 
+int a;
 int s, p, l, m, day;
 int n;
 
+string arrM[8] = {"Action Movie","Romantic Movie ","Inspirational movie","Comedy movie","Horror movie","Animation movie","War movie, "Mystery movie"};
 string arrP[5] = {"Google pay", "Phonepe", "Paytm", "Card", "Cash"};
 string arr2[4] = {"PRIME PLUS (Front) Seats", "PRIME Seats", "CLASSIC PLUS Seats", "CLASSIC (Last) seats"};
-string arrDay[4] = {"Today", "Tommorow", "Day After Tommorow", "Later"};
+string arrDay[4] = {"Today", "Tomorrow", "Day After Tomorrow", "Later"};
 string arrLoc[8] = {"INOX: AIPL Joy Street, Gurgaon", "PVR: Anupam Saket", "Miraj Cinemas: M4U, Sahibabad", "MovieMax: Pacific Mall Ghaziabad", "PVR: Vegas Dwarka", "G3S Cinema: Rohini (Newly Renovated)", "Cinepolis: DLF Avenue, Saket", "PVR: Anupam Saket, Delhi"};
 string arrSeat[5]; // declared by user
 
@@ -39,8 +41,14 @@ void booking::checkAvailableMovies()
 }
 void booking ::typeofmv()
 {
-    cout << "What type of movie you prefer?\n1.Action Movie\n2.Romantic Movie \n3.Inspirational movie\n4.Comedy movie\n5.Horror movie\n6.Animation movie\n7.War movie\n8.Mystery movie\n\nPlease Enter the Choice Number : ";
-    int a;
+    cout << "What type of movie you prefer?"
+// string arrM[8] = {"Action Movie","Romantic Movie ","Inspirational movie","Comedy movie","Horror movie","Animation movie","War movie,"Mystery movie"};
+    for (int i = 0; i < 8; i++)
+    {
+        cout << i + 1 << "." << arrM[i] << endl;
+    }
+    cout << "\nPlease Enter the Choice Number : ";           
+    // int a;
     cin >> a;
     cout << "\n\n";
 
@@ -57,11 +65,11 @@ void booking ::typeofmv()
         cout << "\nEnter Choice number : ";
         break;
     case 3:
-        cout << "The Most Trendy Movies nowdays in your chosed type are : " << endl;
+        cout << "The Most Trendy Movies nowdays in your chosen type are : " << endl;
         cout << "\n1. \n2.\n3.\n";
         break;
     case 4:
-        cout << "The Most Trendy Movies nowdays in your chosed type are : " << endl;
+        cout << "The Most Trendy Movies nowdays in your chosen type are : " << endl;
         cout << "\n1.Dream Girl 2 \n2.OMG 2\n3.Golmaal 5\n";
         cout << "\nEnter Choice number : ";
         int d;
@@ -69,24 +77,24 @@ void booking ::typeofmv()
         cout << "\nMovie selected : Dream Girl 2 \n\n\n";
         break;
     case 5:
-        cout << "The Most Trendy Movies nowadays in your chosed type are : " << endl;
+        cout << "The Most Trendy Movies nowadays in your chosen type are : " << endl;
         cout << "\n1.The Nun 2 \n2.Bhoot\n3.\n";
         break;
     case 6:
-        cout << "The Most Trendy Movies nowdays in your chosed type are : " << endl;
+        cout << "The Most Trendy Movies nowadays in your chosen type are : " << endl;
         cout << "\n1. \n2.\n3.\n";
         break;
     case 7:
-        cout << "The Most Trendy Movies nowdays in your chosed type are : " << endl;
+        cout << "The Most Trendy Movies nowadays in your chosen type are : " << endl;
         cout << "\n1. \n2.\n3.\n";
         break;
     case 8:
-        cout << "The Most Trendy Movies nowdays are : " << endl;
+        cout << "The Most Trendy Movies nowadays are : " << endl;
         cout << "\n1.Spy \n2.V1\n3.The Prestige\n";
         cout << "\nEnter Choice number : ";
         break;
     default:
-        cout << "Please enter valid number : ";
+        cout << "Please enter a valid number : ";
         cin >> a;
         break;
     }
@@ -153,8 +161,7 @@ void booking ::showticket()
     cout << "Movie Ticket Information - \n\n";
     cout << "Name                    :" << name;
     cout << "\nLocation selected       : " << arrLoc[l - 1] << endl;
-    cout << "Movie chosen            : "
-         << "Comedy Movie - Dream Girl 2\n";
+    cout << "Movie chosen            : "<< arrM[a] << " - Dream Girl 2\n";
     cout << "No. of seats booked     : " << s;
     cout << "\nSeats preferred         : " << arr2[m - 1];
     cout << "\nSeat numbers are        : ";
