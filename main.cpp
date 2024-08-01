@@ -42,7 +42,7 @@ void booking::checkAvailableMovies()
 void booking ::typeofmv()
 {
     cout << "What type of movie you prefer?"
-// string arrM[8] = {"Action Movie","Romantic Movie ","Inspirational movie","Comedy movie","Horror movie","Animation movie","War movie,"Mystery movie"};
+// string arrM[8] = {"Action Movie", "Romantic Movie ", "Inspirational movie", "Comedy movie","Horror movie","Animation movie","War movie,"Mystery movie"};
     for (int i = 0; i < 8; i++)
     {
         cout << i + 1 << "." << arrM[i] << endl;
@@ -66,7 +66,7 @@ void booking ::typeofmv()
         break;
     case 3:
         cout << "The Most Trendy Movies nowdays in your chosen type are : " << endl;
-        cout << "\n1. \n2.\n3.\n";
+        cout << "\n1.La La Land \n2.83 \n3.Super 30\n 4.English Vinglsh";
         break;
     case 4:
         cout << "The Most Trendy Movies nowdays in your chosen type are : " << endl;
@@ -78,15 +78,15 @@ void booking ::typeofmv()
         break;
     case 5:
         cout << "The Most Trendy Movies nowadays in your chosen type are : " << endl;
-        cout << "\n1.The Nun 2 \n2.Bhoot\n3.\n";
+        cout << "\n1.The Nun 2 \n2.The Exorcist\n3.The Exorcist: Believer\n";
         break;
     case 6:
         cout << "The Most Trendy Movies nowadays in your chosen type are : " << endl;
-        cout << "\n1. \n2.\n3.\n";
+        cout << "\n1.Wish \n2.Baby Boss\n3. The Monkey king\n";
         break;
     case 7:
         cout << "The Most Trendy Movies nowadays in your chosen type are : " << endl;
-        cout << "\n1. \n2.\n3.\n";
+        cout << "\n1.Sam Bahadur \n2.Pippa\n3.Oppenheimer\n";
         break;
     case 8:
         cout << "The Most Trendy Movies nowadays are : " << endl;
